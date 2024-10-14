@@ -1,0 +1,93 @@
+/* Estilo general */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+  }
+  
+  /* Contenedor principal */
+  h2 {
+    text-align: center;
+    margin-top: 20px;
+    color: #333;
+  }
+
+  ul {
+    list-style-type: none; 
+    padding: 0;
+    max-width: 800px; 
+    margin: 20px auto; 
+    border-radius: 5px;
+    background-color: #fff; 
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); 
+  }
+  
+
+  li {
+    padding: 15px; 
+    border-bottom: 1px solid #e0e0e0; 
+    display: flex;
+    align-items: center; 
+    justify-content: space-between; 
+  }
+  
+  li:last-child {
+    border-bottom: none; 
+  }
+  
+  strong {
+    font-size: 1.2em; /* Aumentar tamaño de texto del título */
+    color: #007BFF; /* Color del título */
+  }
+  
+  /* Botones */
+  button {
+    background-color: #007BFF; /* Color de fondo azul */
+    color: #fff; /* Color del texto */
+    border: none; /* Sin borde */
+    border-radius: 4px; /* Bordes redondeados */
+    padding: 8px 12px; /* Espaciado interno */
+    cursor: pointer; /* Cursor de mano */
+    transition: background-color 0.3s; /* Transición suave */
+  }
+  
+  button:hover {
+    background-color: #0056b3; /* Color de fondo al pasar el mouse */
+  }
+  
+  /* Formularios */
+  form {
+    margin: 20px auto; 
+    max-width: 600px; 
+    background-color: #fff; 
+    padding: 20px; 
+    border-radius: 5px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); 
+  }
+  
+  label {
+    display: block; 
+    margin-bottom: 8px;
+    color: #555; 
+  }
+  
+  input {
+    width: 100%;
+    padding: 10px; 
+    margin-bottom: 15px; 
+    border: 1px solid #ddd; 
+    border-radius: 4px; 
+  }
+  
+  input:focus {
+    border-color: #007BFF; 
+    outline: none;
+  }
+  
+  /* Estilo para la imagen del libro */
+  img {
+    margin-left: 10px; 
+    border-radius: 4px; 
+  }
+  

@@ -1,0 +1,8 @@
+<nav>
+    <ul>
+        <li><a routerLink="/">Inicio</a></li>
+        <li><a routerLink="/login">Logín</a></li>
+        <li *ngIf="isAdmin"><a routerLink="/gestion-libros">Gestión Libros</a></li>
+        <li *ngIf="isInvitado"><a routerLink="/recomendados">Recomendados</a></li>
+    </ul>
+</nav>

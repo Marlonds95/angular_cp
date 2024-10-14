@@ -1,0 +1,17 @@
+footer{
+    background-color: var(--footer-bg);
+    color:var(--text-color);
+    text-align: center;
+    padding: 1 rem 0;
+}
+
+ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+a{
+    text-decoration: none;
+    color: var(--link-color);
+}

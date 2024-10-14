@@ -1,0 +1,15 @@
+<h2>Libros Recomendados (Best Sellers)</h2>
+<ul>
+  <li *ngFor="let libro of bestSellers">
+    <h3>{{ libro.titulo }}</h3>
+    <p>Autor: {{ libro.autor }}</p>
+    <p>Año: {{ libro.anio }}</p>
+    <img [src]="libro.imagen" alt="{{ libro.titulo }}" />
+  </li>
+</ul>
+
+<ul>
+    <li *ngIf="isAuthenticated && role === 'invitado'">
+      <button (click)="logout()">Salir de invitado</button>
+    </li>
+  </ul>

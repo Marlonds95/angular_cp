@@ -1,0 +1,10 @@
+<h2> Libros</h2>
+
+<!-- Lista de libros -->
+<ul>
+  <li *ngFor="let libro of libros">
+    <strong>{{ libro.titulo }}</strong> - {{ libro.autor }} ({{ libro.anio }})
+    <img [src]="libro.imagen" alt="Imagen del libro" width="50" height="75">
+    
+  </li>
+</ul>

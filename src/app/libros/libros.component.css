@@ -1,0 +1,94 @@
+/* Estilo general */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+  }
+  
+  /* Contenedor principal */
+  h2 {
+    text-align: center;
+    margin-top: 20px;
+    color: #333;
+  }
+  
+  /* Lista de libros */
+  ul {
+    list-style-type: none; 
+    padding: 0;
+    max-width: 800px; 
+    margin: 20px auto; 
+    border-radius: 5px;
+    background-color: #fff; 
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); 
+  }
+  
+  /* Elementos de la lista */
+  li {
+    padding: 15px; /* Espaciado interno */
+    border-bottom: 1px solid #e0e0e0; /* Línea separadora */
+    display: flex;
+    align-items: center; /* Centrar verticalmente */
+    justify-content: space-between; /* Espacio entre título e imagen */
+  }
+  
+  li:last-child {
+    border-bottom: none; /* Quitar línea del último elemento */
+  }
+  
+  strong {
+    font-size: 1.2em; /* Aumentar tamaño de texto del título */
+    color: #007BFF; /* Color del título */
+  }
+  
+  /* Botones */
+  button {
+    background-color: #007BFF; /* Color de fondo azul */
+    color: #fff; /* Color del texto */
+    border: none; /* Sin borde */
+    border-radius: 4px; /* Bordes redondeados */
+    padding: 8px 12px; /* Espaciado interno */
+    cursor: pointer; /* Cursor de mano */
+    transition: background-color 0.3s; /* Transición suave */
+  }
+  
+  button:hover {
+    background-color: #0056b3; /* Color de fondo al pasar el mouse */
+  }
+  
+  /* Formularios */
+  form {
+    margin: 20px auto; /* Centrar formulario */
+    max-width: 600px; /* Ancho máximo del formulario */
+    background-color: #fff; /* Fondo blanco para el formulario */
+    padding: 20px; /* Espaciado interno */
+    border-radius: 5px; /* Bordes redondeados */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  }
+  
+  label {
+    display: block; /* Mostrar etiquetas como bloques */
+    margin-bottom: 8px; /* Espaciado debajo de la etiqueta */
+    color: #555; /* Color del texto de la etiqueta */
+  }
+  
+  input {
+    width: 100%; /* Ancho completo del input */
+    padding: 10px; /* Espaciado interno */
+    margin-bottom: 15px; /* Espaciado debajo del input */
+    border: 1px solid #ddd; /* Borde gris claro */
+    border-radius: 4px; /* Bordes redondeados */
+  }
+  
+  input:focus {
+    border-color: #007BFF; /* Borde azul al enfocar */
+    outline: none; /* Sin contorno */
+  }
+  
+  /* Estilo para la imagen del libro */
+  img {
+    margin-left: 10px; /* Espaciado a la izquierda de la imagen */
+    border-radius: 4px; /* Bordes redondeados en la imagen */
+  }
+  

@@ -1,0 +1,58 @@
+{
+  "users": [
+    {
+      "email": "olivier@mail.com",
+      "password": "$2a$10$4YWM3KSPWLvCgx24RJhSs.OZnvkn85tvxahtmjqVVXx5.bSK.r42y",
+      "id": 1,
+      "role": "invitado"
+    },
+    {
+      "email": "marlon@gmail.com",
+      "password": "$2a$10$geJEMLagncAPGKxlCUI6IuTTj/PJm/9qY7qZ8FsJwj9Nv2k42uNw.",
+      "id": 2,
+      "role": "admin"
+    }
+  ],
+  "libros": [
+    {
+      "id": 1,
+      "autor": "Albert Camus",
+      "titulo": "Ensayo sobre ceguera",
+      "anio": 2011,
+      "imagen": "https://www.mrbooks.com/mrbooks/portadas/9789588940212.webp",
+      "bestSeller": true
+    },
+    {
+      "id": 2,
+      "autor": "Gabriel García Marquez",
+      "titulo": "Cien años de soledad",
+      "anio": 1996,
+      "imagen": "https://www.mrbooks.com/mrbooks/portadas/9789585581616.webp",
+      "bestSeller": true
+    },
+    {
+      "id": 3,
+      "autor": "Juan Rulfo",
+      "titulo": "Pedro Paramo",
+      "anio": 1970,
+      "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcStEK1ZUlSWxZ5hPHnqi_kBHt5rv0xj_oU2Hw&s",
+      "bestSeller": false
+    },
+    {
+      "id": 4,
+      "autor": "Herman Hesse",
+      "titulo": "Siddharta",
+      "anio": 1997,
+      "imagen": "https://images.cdn3.buscalibre.com/fit-in/360x360/80/ac/80ace73e8b71b92e68af77a28e91171d.jpg",
+      "bestSeller": true
+    },
+    {
+      "id": 5,
+      "autor": "Jack London",
+      "titulo": "El vagabundo de las estrellas",
+      "anio": 1915,
+      "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTyRIAwXKKhahB_s2mQvfHpgWpPJHacb_KHOA&s",
+      "bestSeller": false
+    }
+  ]
+}

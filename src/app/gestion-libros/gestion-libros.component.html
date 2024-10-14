@@ -1,0 +1,61 @@
+<h2>Gestión de Libros</h2>
+
+
+<ul>
+  <li *ngFor="let libro of libros">
+    <strong>{{ libro.titulo }}</strong> - {{ libro.autor }} ({{ libro.anio }})
+    <img [src]="libro.imagen" alt="Imagen del libro" width="50" height="75">
+    <button (click)="seleccionarLibro(libro)">Editar</button>
+    <button (click)="eliminarLibro(libro.id)">Eliminar</button>
+  </li>
+</ul>
+
+
+<h3>Agregar Nuevo Libro</h3>
+<form (ngSubmit)="agregarLibro()">
+  <label for="autor">Autor:</label>
+  <input id="autor" [(ngModel)]="nuevoLibro.autor" name="autor" required>
+  
+  <label for="titulo">Título:</label>
+  <input id="titulo" [(ngModel)]="nuevoLibro.titulo" name="titulo" required>
+
+  <label for="anio">Año:</label>
+  <input id="anio" type="number" [(ngModel)]="nuevoLibro.anio" name="anio" required>
+
+  <label for="imagen">URL de Imagen:</label>
+  <input id="imagen" [(ngModel)]="nuevoLibro.imagen" name="imagen">
+  <label for="bestSeller">Best Seller:</label>
+  <select id="bestSeller" [(ngModel)]="nuevoLibro.bestSeller" name="bestSeller" >
+    <option value="" disabled selected>Seleccione una opción</option>
+    <option [ngValue]="true">Sí</option>
+    <option [ngValue]="false">No</option>
+  </select>
+  <button type="submit">Agregar Libro</button>
+</form>
+
+
+<div *ngIf="libroSeleccionado">
+  <h3>Editar Libro</h3>
+  <form (ngSubmit)="actualizarLibro()">
+    <label for="editarAutor">Autor:</label>
+    <input id="editarAutor" [(ngModel)]="libroSeleccionado.autor" name="editarAutor" required>
+
+    <label for="editarTitulo">Título:</label>
+    <input id="editarTitulo" [(ngModel)]="libroSeleccionado.titulo" name="editarTitulo" required>
+
+    <label for="editarAnio">Año:</label>
+    <input id="editarAnio" type="number" [(ngModel)]="libroSeleccionado.anio" name="editarAnio" required>
+
+    <label for="editarImagen">URL de Imagen:</label>
+    <input id="editarImagen" [(ngModel)]="libroSeleccionado.imagen" name="editarImagen">
+    <label for="bestSeller">Best Seller:</label>
+  <select id="bestSeller" [(ngModel)]="libroSeleccionado.bestSeller" name="bestSeller">
+    <option [ngValue]="true">Sí</option>
+    <option [ngValue]="false">No</option>
+  </select>
+    <button type="submit">Actualizar Libro</button>
+    <button type="button" (click)="libroSeleccionado = null">Cancelar</button>
+  </form>
+</div>
+
+<button (click)="logout()">Salir</button>

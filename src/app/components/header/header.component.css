@@ -1,0 +1,17 @@
+nav {
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--header-bg);
+    padding: 1rem;
+}
+
+ul{
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+}
+
+a{
+    text-decoration: none;
+    color: var(--text-color);
+}
